@@ -1,4 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
 body {
+  padding-top: 100px;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +18,81 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.searchbar{
+  width: 50%;
+  margin: auto;
+}
+
+.searchbar input, button{
+  width: 75%;
+  border: 2px solid wheat;
+  border-right: 0px;
+  font-size: 20px;
+  padding: 10px;
+  background: transparent;
+  color: rgb(65, 18, 18);
+}
+
+.searchbar button{
+  width: 25%;
+  background: #eee;
+  color: rgb(39, 33, 33);
+  float: right;
+  border-left: 0px;
+}
+
+.searchbar button:hover{
+  opacity: 0.5;
+}
+
+.list-outer{
+  padding: 3rem;
+  text-align: center;
+}
+
+.list-inner{
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+}
+
+
+.song img {
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.song-footer {
+  padding: 1.5rem;
+}
+.song-footer h3{
+  margin-bottom: 1rem;
+}
+
+.error {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 30px
+}
+
+
+@media screen and (max-width: 500px) {
+  
+  .searchbar{
+    width: 80%;
+  }
+
+  .searchbar input, button{
+    width: 75%;
+    font-size: 18px;
+    padding: 5px;
+
+  }
+}
+
